@@ -5,7 +5,7 @@ const socketio = require('socket.io'); //sockets for realtime application
 const msgformat = require('./public/utils/msgformat'); // to get msg format
 const {userJoin, getCurrentUser} = require('./public/utils/users'); // to get msg format
 //const user = document.getElementById('username');
-
+const port = process.env.PORT || 3000;
 
 const app = express();
 const server = http.createServer(app);
